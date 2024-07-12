@@ -42,3 +42,28 @@ snoopy.rename("Jimmy")
 snoopy.say_hello()
 snoopy.is_sick()
 print(snoopy.healthy)
+
+class Dog:
+  """Define a dog"""
+  def __init__(self, name, age = 0):
+    """ Initiaze a dog with name and age """
+    self.name = name
+    self.age = age
+
+  def greet(self):
+    """ Return a dog greeting """
+    return f"Hello, I'm a {self.casual_name()} named {self.name}"
+
+
+  def casual_name(self):
+    """ Determine the dog name based on the age"""
+    if self.age < 2:
+      return "puppy"
+    elif self.age < 10:
+      return "grown up dog"
+    else:
+      return "old dog"
+
+
+snoopy = Dog("Snoopy")
+print(snoopy.greet())
