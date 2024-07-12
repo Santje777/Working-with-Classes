@@ -67,3 +67,13 @@ class Dog:
 
 snoopy = Dog("Snoopy")
 print(snoopy.greet())
+
+
+from dog import Dog
+from cat import Cat
+
+snoopy = Dog("Snoopy")
+print(snoopy.greet())
+
+jimmy = Cat("Jimmy")
+print(jimmy.greet())
